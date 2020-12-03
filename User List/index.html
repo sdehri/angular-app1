@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- my stylesheet -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet" href="style.css"> 
     <!-- my script -->
     <script src='controller.js'></script>
     <script src='factory.js'></script>
@@ -44,30 +44,21 @@
 
         <div ng-app='myapp' ng-controller='mycontroller' >
             <h3>Contact Lists</h3>
-            <div class='withForm'>
-                <form action="#">
+            <div>
+               
                     <label>Name</label>
-                    <input type="hidden" ng-model='id'>
-                    <input type="text" ng-model='name' class='form-control' autocomplete="off">
+					<br>
                     <label>Phone</label>
-                    <input type="text" ng-model='phone' class='form-control'>
-                    <input type="submit" value='{{btname}}' class='form-control' ng-click='insertIntoList()'>
-                    <input type="submit" value='{{sbtname}}' class='form-control' ng-click='getList()'>
-                </form>
+                
             </div>
 
-            <div class='tableHolder'>
-                <table class="table table-bordered">
+			<div>Result</div>
+            <div >
+                <table >
                     <tr>
                         <th>Name</th>
                         <th>Phone</th>
-                    </tr>
-                    <tr ng-repeat='x in collection'>
-                        <td>{{x.name}}</td>
-                        <td>{{x.phone}}</td>
-                    </tr>
-
-
+                    </tr>                  
 
                 </table>
             </div>
